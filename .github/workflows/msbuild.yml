@@ -91,7 +91,7 @@ jobs:
       if: |
         github.event.inputs.release == 'true' &&
         github.ref_name == 'master' &&
-        github.repository == 'ThirteenAG/Ultimate-ASI-Loader'
+        github.repository == 'niresh1234/Ultimate-ASI-Loader'
       uses: ncipollo/release-action@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -105,7 +105,7 @@ jobs:
       if: |
         github.event.inputs.release == 'true' &&
         github.ref_name == 'master' &&
-        github.repository == 'ThirteenAG/Ultimate-ASI-Loader'
+        github.repository == 'niresh1234/Ultimate-ASI-Loader'
       id: release_info_x86
       uses: cardinalby/git-get-release-action@master
       env:
@@ -117,7 +117,7 @@ jobs:
       if: |
         github.event.inputs.release == 'true' &&
         github.ref_name == 'master' &&
-        github.repository == 'ThirteenAG/Ultimate-ASI-Loader'
+        github.repository == 'niresh1234/Ultimate-ASI-Loader'
       uses: ncipollo/release-action@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -131,7 +131,7 @@ jobs:
       if: |
         github.event.inputs.release == 'true' &&
         github.ref_name == 'master' &&
-        github.repository == 'ThirteenAG/Ultimate-ASI-Loader'
+        github.repository == 'niresh1234/Ultimate-ASI-Loader'
       id: release_info_x64
       uses: cardinalby/git-get-release-action@master
       env:
@@ -143,7 +143,7 @@ jobs:
       if: |
         github.event.inputs.release == 'true' &&
         github.ref_name == 'master' &&
-        github.repository == 'ThirteenAG/Ultimate-ASI-Loader'
+        github.repository == 'niresh1234/Ultimate-ASI-Loader'
       uses: ncipollo/release-action@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
