@@ -146,7 +146,6 @@ jobs:
       - name: Upload Release (Main)
         if: |
           github.event.inputs.release == 'true' &&
-          github.ref_name == 'master' &&
           github.repository == 'niresh1234/Ultimate-ASI-Loader'
         uses: ncipollo/release-action@main
         with:
@@ -160,7 +159,6 @@ jobs:
       - name: Get release info (Win32)
         if: |
           github.event.inputs.release == 'true' &&
-          github.ref_name == 'master' &&
           github.repository == 'niresh1234/Ultimate-ASI-Loader'
         id: release_info_x86
         uses: cardinalby/git-get-release-action@master
@@ -172,7 +170,6 @@ jobs:
       - name: Upload Release (Win32)
         if: |
           github.event.inputs.release == 'true' &&
-          github.ref_name == 'master' &&
           github.repository == 'niresh1234/Ultimate-ASI-Loader'
         uses: ncipollo/release-action@main
         with:
@@ -186,7 +183,6 @@ jobs:
       - name: Get release info (Win64)
         if: |
           github.event.inputs.release == 'true' &&
-          github.ref_name == 'master' &&
           github.repository == 'niresh1234/Ultimate-ASI-Loader'
         id: release_info_x64
         uses: cardinalby/git-get-release-action@master
@@ -198,7 +194,6 @@ jobs:
       - name: Upload Release (Win64)
         if: |
           github.event.inputs.release == 'true' &&
-          github.ref_name == 'master' &&
           github.repository == 'niresh1234/Ultimate-ASI-Loader'
         uses: ncipollo/release-action@main
         with:
